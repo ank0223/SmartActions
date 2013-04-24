@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/celllabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cell Tower IDs" />
+    <EditText
+        android:id="@+id/celltext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textMultiLine" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/cellnamelabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cell Tower Name" />
+
+    <EditText
+        android:id="@+id/cellnametext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10" />
+
+    <Button
+        android:id="@+id/learn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Learn" />
+
+</LinearLayout>

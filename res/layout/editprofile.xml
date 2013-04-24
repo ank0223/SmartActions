@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/menu_bg">"
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="87dp"
+            android:background="@drawable/heading"
+            android:gravity="center"
+            android:paddingBottom="25dp"
+            android:text="Edit Profile"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="25sp"
+            android:textStyle="bold" >
+
+        </TextView>
+
+        <LinearLayout
+            android:id="@+id/lay1"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/name1"
+                android:layout_width="62dp"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textStyle="bold"
+                android:textColor="#3f3f3f" />
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="258dp"
+                android:layout_height="wrap_content" 
+                android:enabled="False"
+                android:editable="False"/>
+        </LinearLayout>
+
+       
+        <LinearLayout
+            android:id="@+id/lay2"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/mode1"
+                android:layout_width="62dp"
+                android:layout_height="wrap_content"
+                android:text="Mode"
+                android:textStyle="bold"
+                android:textColor="#3f3f3f" />
+		  <Spinner
+		        android:id="@+id/mode"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:entries="@array/mode_arrays"
+		        android:prompt="@string/mode_prompt" />
+		 
+        </LinearLayout>
+        
+          <LinearLayout
+            android:id="@+id/lay4"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/spe"
+                android:layout_width="62dp"
+                android:layout_height="wrap_content"
+                android:text="Custom msg"
+                android:textStyle="bold"
+                android:textColor="#3f3f3f" />
+        
+         <Spinner
+        android:id="@+id/special"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/special_arrays"
+        android:prompt="@string/special_prompt" />
+         
+         </LinearLayout>
+        
+         <LinearLayout
+            android:id="@+id/lay5"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/blutexte"
+                android:layout_width="62dp"
+                android:layout_height="wrap_content"
+                android:text="Blutooth"
+                android:textStyle="bold"
+                android:textColor="#3f3f3f" />
+        
+         <Spinner
+        android:id="@+id/bluspine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/on_arrays"
+        android:prompt="@string/on_prompt" />
+         
+         </LinearLayout>
+         
+         <LinearLayout
+            android:id="@+id/lay6"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/witexte"
+                android:layout_width="62dp"
+                android:layout_height="wrap_content"
+                android:text="Wi-Fi"
+                android:textStyle="bold"
+                android:textColor="#3f3f3f" />
+        
+         <Spinner
+        android:id="@+id/wispine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/on_arrays"
+        android:prompt="@string/on_prompt" />
+         
+         </LinearLayout>
+         
+         <LinearLayout
+            android:id="@+id/lay7"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/britexte"
+                android:layout_width="62dp"
+                android:layout_height="wrap_content"
+                android:text="Brightness"
+                android:textStyle="bold"
+                android:textColor="#3f3f3f" />
+
+		  <SeekBar
+		      android:id="@+id/briseeke"
+		      android:layout_width="250dp"
+		      android:layout_height="wrap_content" />
+		 
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/lay3"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/volume1"
+                android:layout_width="62dp"
+                android:layout_height="wrap_content"
+                android:text="Volume"
+                android:textStyle="bold"
+                android:textColor="#3f3f3f" />
+
+		  <SeekBar
+		      android:id="@+id/volume"
+		      android:layout_width="252dp"
+		      android:layout_height="wrap_content" />
+		 
+        </LinearLayout>
+
+            <Button
+                android:id="@+id/done"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/btn_shape"
+                android:text="Done"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF" />
+
+        </LinearLayout>
+
+
+</ScrollView>
